@@ -99,6 +99,3 @@
 }() );
 
 
-addEventListener("scroll", (event) => {
-	
-	console.log("ca marche bien")});

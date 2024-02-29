@@ -1,3 +1,134 @@
+.banner {
+  background-image: url("./assets/images/banner.png");
+  min-height: 806px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner img {
+  margin-top: -10%;
+  width: 50%;
+}
 
+.story {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story h2::before {
+  content: url("./assets/images/sunflower_leaves.png");
+  position: absolute;
+  left: 0;
+  top: 1.8em;
+  z-index: -1;
+}
+.story h2::after {
+  content: url("./assets/images/Sunflower.png");
+  position: absolute;
+  left: 0.7em;
+  top: 6em;
+}
+.story__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  font-size: 15px;
+  padding-bottom: 2em;
+}
+.story__article::before {
+  content: url("./assets/images/hibiscus_leaves.png");
+  position: absolute;
+  left: 50%;
+  top: 8em;
+  z-index: -1;
+}
+.story__article::after {
+  content: url("./assets/images/Hibiscus.png");
+  position: absolute;
+  left: calc(50% + 414px);
+  top: 2em;
+}
+.story #characters {
+  margin: 6em;
+  display: flex;
+  text-align: center;
+}
+.story #characters h3 {
+  background-image: url("./assets/images/orange_characters_bg.png");
+}
+.story #characters div {
+  flex: 1;
+}
+.story #characters .other-characters {
+  display: flex;
+  flex-wrap: wrap;
+}
+.story #characters .other-characters figure {
+  width: 50%;
+  padding: 2% 10%;
+  margin: 0;
+}
+.story #place {
+  display: flex;
+  background-image: url("./assets/images/place_bg.png");
+  width: 100%;
+  min-height: 699px;
+  background-size: cover;
+}
+.story #place h3 {
+  background-image: url("./assets/images/orange_place_bg.png");
+  margin-bottom: -1em;
+}
+.story #place > div {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 6em;
+}
+.story #place > div p {
+  padding-left: 5em;
+}
+
+#studio {
+  position: relative;
+  margin-top: 3em;
+}
+#studio h2 {
+  overflow: hidden;
+  background-image: url("./assets/images/purple_studio_bg.png");
+}
+#studio h2::before {
+  content: url("./assets/images/random_flower.png");
+  position: absolute;
+  left: -1em;
+  top: 0;
+}
+#studio h2::after {
+  content: url("./assets/images/flower.png");
+  position: absolute;
+  right: 1em;
+  top: 1.2em;
+}
+#studio > div {
+  display: flex;
+  justify-content: space-between;
+  width: 66.66%;
+  margin: auto;
+}
+#studio > div::before {
+  content: url("./assets/images/trple-leaf.png");
+  position: absolute;
+  left: calc(50% - 17.225px);
+  top: 40%;
+}
+#studio > div p {
+  width: 44.5%;
+}
 
 /*# sourceMappingURL=focechild.css.map */
