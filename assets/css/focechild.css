@@ -1,17 +1,114 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import "front-page";
- *   |         ^^^^^^^^^^^^
- *   '
- *   sass\focechild.scss 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"front-page\";\a   \2502          ^^^^^^^^^^^^\a   \2575 \a   sass\\focechild.scss 4:9  root stylesheet";
+p {
+  animation: p 2500ms;
 }
+
+.banner {
+  animation: backgroundimg 2500ms;
+}
+
+.banner img {
+  animation: bannerimg 2500ms;
+}
+
+@keyframes p {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes backgroundimg {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bannerimg {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadesections {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes back {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.site-footer {
+  animation: back 2500ms;
+}
+.site-footer::before {
+  animation: spin 10s infinite linear;
+}
+.site-footer::after {
+  animation: spin 10s infinite linear;
+}
+.site-footer ul::after {
+  animation: spin 10s infinite linear;
+}
+
+.story {
+  animation: fadesections 2500ms;
+}
+.story h2::after {
+  animation: spin 10s infinite linear;
+}
+.story__article::after {
+  animation: spin 10s infinite linear;
+}
+#studio {
+  animation: fadesections 2500ms;
+}
+#studio h2::before {
+  animation: spin 10s infinite linear;
+}
+#studio h2::after {
+  animation: spin 10s infinite linear;
+}
+
+/*# sourceMappingURL=focechild.css.map */

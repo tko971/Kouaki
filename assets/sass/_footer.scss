@@ -1,0 +1,28 @@
+//footer
+.site-footer {
+
+    animation: back 2500ms;
+  
+    &::before {
+        animation: spin 10s infinite linear;
+    }
+    &::after {
+        animation: spin 10s infinite linear;
+    }
+
+    ul{
+    
+
+      li{
+
+          
+      }
+      &::after {
+        animation: spin 10s infinite linear;
+      }
+
+    }  
+}
+
+  
+    

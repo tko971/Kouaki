@@ -1,0 +1,28 @@
+// STUDIO
+
+#studio {
+    animation: fadesections 2500ms;
+    h2 {
+      
+      &::before {
+        animation: spin 10s infinite linear;
+        
+        
+      }
+      
+      &::after {
+        
+        animation: spin 10s infinite linear;
+      }
+    }
+  
+    > div {
+      
+      &::before {
+       
+      }
+      p{
+     
+      }
+    }
+  }

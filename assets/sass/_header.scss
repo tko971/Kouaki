@@ -1,4 +1,98 @@
-.banner{
+p{
 
-    background-color: black;
+animation: p 2500ms;
+
+}
+
+
+
+.banner{
+   animation: backgroundimg 2500ms ;
+   
+
+}
+
+.banner img {
+      
+    animation: bannerimg 2500ms;
+    
+}
+
+@keyframes p{
+    
+  0% {
+      transform: translateY(-500px);
+      opacity: 0;
+  }
+  50%{
+      opacity: 0.2;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+      }
+  }
+
+@keyframes backgroundimg{
+    
+0% {
+    transform: translateY(-500px);
+    opacity: 0;
+}
+50%{
+    opacity: 0.2;
+}
+100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+@keyframes bannerimg{
+    0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        }
+    }
+
+@keyframes fadesections{
+        0% {
+            transform: translateY(500px);
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.2;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+            }
+        }
+
+@keyframes back{
+                                                                                
+            0% {
+                transform: translateY(500px);
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.2;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+                }
+            }                                                                                        
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

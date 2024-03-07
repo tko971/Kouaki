@@ -1,0 +1,51 @@
+// story
+.story {
+    animation: fadesections 2500ms;
+    h2{
+        
+      &::before {
+        
+      }
+      &::after {
+        animation: spin 10s infinite linear;
+      }
+    }
+  
+    &__article {
+      
+      &::before {
+        
+      }
+      &::after {
+        animation: spin 10s infinite linear;
+      }
+    }
+  
+    #characters {
+      
+      h3 {
+        
+      }
+      div {
+       
+      }
+      .other-characters {
+        
+        }
+      }
+    }
+    #place {
+      
+      h3 {
+        
+      }
+      > div {
+        
+        p {
+          
+        }
+      }
+    }
+
+    
+  
