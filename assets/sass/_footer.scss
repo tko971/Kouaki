@@ -2,12 +2,19 @@
 .site-footer {
 
     animation: back 2500ms;
+    flex-wrap: wrap;
+    overflow: unset;
   
     &::before {
-        animation: spin 10s infinite linear;
+        animation: spin var(--speed) infinite linear;
+        width: 155px;
+        height: 154px;
     }
     &::after {
-        animation: spin 10s infinite linear;
+        animation: spin var(--speed) infinite linear;
+        width: 173px;
+        height: 169px;
+        bottom: 33.8em;
     }
 
     ul{
@@ -18,11 +25,48 @@
           
       }
       &::after {
-        animation: spin 10s infinite linear;
+        animation: spin var(--speed) infinite linear;
+        bottom: -32.5em;
       }
 
     }  
 }
+
+#oscars {
+display: flex;
+margin-left: 243px;
+font-size: 42px;
+font-family: 'Quicksand' ; 
+color: white;
+position: relative;
+bottom: 162px;
+column-gap: 80px;
+
+}
+.orangeoscar{
+  
+ 
+  position: absolute;
+  z-index: -1;
+  transform: scale(1.4);
+  
+}
+
+
+.oscarstitre{
+  width: 643px;
+  height: 267px;
+  position: relative;
+  
+}
+
+
+
+
+
+
+
+
 
   
     

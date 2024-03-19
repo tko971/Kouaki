@@ -1,15 +1,48 @@
-const storyh2 = document. querySelector('.story h2')
-const studioh2 = document. querySelector('.studio h2')
+//TITRES
+const titres = document.querySelectorAll('h2 span');
 
-window.addEventListener('scroll',() =>{
+const observerOptions ={
+	root:null,
+	threshold:0.5,
+	rootMargin:"0px"
 
-	const {scrollTop, clientHeight} = document.documentElement;
+}
 
-	console.log(scrollTop,clientHeight);
+const observerTitre = new IntersectionObserver(
+	entries => {
+		entries.forEach(entry => {
+			console.log(entry);
+			if (entry.isIntersecting){
+				entry.target.classList.add('animation-titre');
+				//observerTitre.unobserve(entry.target);
+			}
+		});
+	},observerOptions
+);
 
-	const hautfenetreelement =storyh2.getBoundingClientRect().top;
+titres.forEach(titre =>{
+	observerTitre.observe(titre);
+});
 
-	if(scrollTop> (scrollTop + hautfenetreelement).toFixed()){
-		storyh2.classList.add('active')
-	}
+//NAVIGATION
+
+const boutonburger = document.querySelector(".menu-toggle")
+const nav = document.querySelector(".navhover")
+
+boutonburger.addEventListener("click", toggleNav)
+
+function toggleNav(){
+	boutonburger.classList.toggle("active")
+	nav.classList.toggle("active")
+}
+
+//ROTATION FLEURS
+
+const root = document.querySelector(":root");
+document.addEventListener("scroll",()=>{
+	root.style.setProperty("--speed","2s"); 
+})
+
+document.addEventListener("scrollend",()=>{
+	root.style.setProperty("--speed","10s"); 
 })

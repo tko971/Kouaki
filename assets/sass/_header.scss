@@ -1,3 +1,12 @@
+:root{
+    --speed:10s;
+}
+
+.site{
+
+    overflow: hidden;
+}
+
 p{
 
 animation: p 2500ms;
@@ -7,16 +16,242 @@ animation: p 2500ms;
 
 
 .banner{
-   animation: backgroundimg 2500ms ;
+   animation: backgroundimg 500ms ;
    
 
 }
 
 .banner img {
       
-    animation: bannerimg 2500ms;
+    opacity: 0;
+    animation: bannerimg 2.2s 0.5s ease-out forwards,flottement 3000ms 2.7s infinite ease-in-out;
+    z-index: 1;
     
 }
+
+//MENU
+
+.navhover{
+
+    display: none;
+    height: 944px;
+    position: fixed;
+    background-color: #FFF5E9;
+    opacity: 0;
+    overflow: hidden;
+    
+    li{
+       list-style-type: none;
+       line-height: 84px;
+     }
+
+     a{
+        text-decoration: none;
+        font-size: 64px;
+        
+     }
+
+    ul{
+
+        top:288px;
+        left: 451px;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        
+        }
+
+     p{
+
+        animation: none;
+        top:772px;
+        left: 640px;
+        position: absolute;
+        
+     }
+
+}
+
+.navhover a:hover{
+
+    text-shadow: 0.1em 0.1em 0.2em #FF5C00;
+    color: black;
+}
+
+.navhover.active{
+
+    animation: fadehover 2s forwards ease-in-out;
+    display: flex;
+    margin-top: 80px;
+    
+}
+
+.sectiondeux{
+
+    text-align: center;
+    width: 539px;
+    display: grid;
+}
+
+.sectionun{
+
+    width: 451px;
+    display: grid;
+    
+}
+
+.sectiontrois{
+
+    width: 451px;
+    display: grid;
+}
+
+.menu-toggle{
+
+    z-index: 10;
+    position: absolute;
+    top:25px;
+    left: 1300px;
+    right: 300px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-navigation .line {
+
+    position: absolute;
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+    height: 1px;
+}
+
+.main-navigation {
+
+    position: fixed;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation.toggled ul {
+    
+    display: flex;
+
+}    
+
+.l1{
+    transform: translateY(-10px);
+}
+
+.l3{
+    transform: translateY(10px);
+}
+
+.menu-toggle.active .l1{
+    transform: translateY(0px) rotate(135deg);
+}
+
+.menu-toggle.active .l2{
+    opacity: 0;
+}
+
+.menu-toggle.active .l3{
+    transform: translateY(0px) rotate(-135deg);
+}
+
+.orchid{
+  
+    top:52px;
+    left:-59px;
+    position: absolute;
+    animation: spin var(--speed) infinite linear;
+
+}
+
+.catviolet{
+
+    top:174px;
+    left:267px;
+    position: absolute;
+    animation: flottementtwo 2000ms 2.7s infinite ease-in-out;
+    
+}
+
+.flower{
+
+    top:463px;
+    left:213px;
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    animation: spin var(--speed) infinite linear;
+
+}
+
+.catroux{
+
+    top:728px;
+    left:79px;
+    position: absolute;
+    width: 106px;
+    height: 96px;
+    animation: flottement 2000ms 2.7s infinite ease-in-out;
+
+}
+
+.sunflower{
+
+    top:69px;
+    left:1039px;
+    position: absolute;
+    width: 216px;
+    height: 216px;
+    animation: spin var(--speed) infinite linear;
+
+}
+
+.randum{
+
+    top:375px;
+    left:1396px;
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    animation: spin var(--speed) infinite linear;
+}
+
+.chatnoir{
+
+    top:450px;
+    left:1076px;
+    position: absolute;
+    animation: flottementtwo 3000ms 2.7s infinite ease-in-out;
+    
+}
+
+.hibiscus{
+
+    top:600px;
+    left:1122px;
+    position: absolute;
+    width: 626px;
+    height: 626px;
+    animation: spin var(--speed) infinite linear;
+    
+}
+
+.loghover{
+
+    top:24px;
+    left: 610px;
+    position: absolute;
+    animation: flottement 3000ms 2.7s infinite ease-in-out;
+}
+
+//FIN MENU
 
 @keyframes p{
     
@@ -32,6 +267,56 @@ animation: p 2500ms;
       opacity: 1;
       }
   }
+
+  @keyframes flottement{
+    
+    0% {
+        transform: translate(0,0);
+    }
+    10%{
+        transform: translateX(10px);
+    }
+    20%{
+        transform: translateY(-10px);
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    55% {
+        transform: translateY(5px);
+    }
+    70%{
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+    }
+
+    @keyframes flottementtwo{
+    
+        0% {
+            transform: translate(0,0);
+        }
+        10%{
+            transform: translateY(10px);
+        }
+        20%{
+            transform: translateX(-10px);
+        }
+        40%{
+            transform: translateX(-10px);
+        }
+        55% {
+            transform: translateY(15px);
+        }
+        70%{
+            transform: translate(-15px);
+        }
+        100% {
+            transform: translate(0,0);
+        }
+        }
 
 @keyframes backgroundimg{
     
@@ -50,11 +335,16 @@ animation: p 2500ms;
 
 @keyframes bannerimg{
     0% {
-        transform: translateY(500px);
+        transform: translateY(1000px);
         opacity: 0;
     }
+    50% {
+        transform: translateY(100px);
+        opacity: 1;
+    }
     100% {
-        transform: translateY(0);
+        transform: translateY(0px);
+        opacity: 1;
         }
     }
 
@@ -71,6 +361,20 @@ animation: p 2500ms;
             opacity: 1;
             }
         }
+
+@keyframes fadehover{
+            0% {
+                 opacity: 0;
+            }
+
+            50%{
+                opacity: 0.2;
+            }
+            100% {
+                
+                opacity: 1;
+                }
+            }
 
 @keyframes back{
                                                                                 
@@ -96,3 +400,36 @@ animation: p 2500ms;
         transform: rotate(360deg);
     }
 }
+
+@keyframes animtitre {
+    
+    100% {
+
+        transform: translateY(0);
+
+        }
+    }                           
+    
+
+#background-video{
+
+    position: absolute;
+    z-index: 0;
+}
+
+.animation-titre{
+
+     animation: animtitre 2000ms forwards;
+    
+}
+
+
+h2 span{
+
+    transform: translateY(100%);
+    display: inline-block;
+    
+}
+
+
+

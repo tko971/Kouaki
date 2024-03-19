@@ -7,7 +7,9 @@
         
       }
       &::after {
-        animation: spin 10s infinite linear;
+        animation: spin var(--speed) infinite linear;
+        width: 154px;
+        height: 155px;
       }
     }
   
@@ -17,7 +19,7 @@
         
       }
       &::after {
-        animation: spin 10s infinite linear;
+        animation: spin var(--speed) infinite linear;
       }
     }
   

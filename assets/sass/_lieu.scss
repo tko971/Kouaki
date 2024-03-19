@@ -1,0 +1,41 @@
+.story #place{
+
+    background:inherit
+}
+
+.story #place > div {
+    position: absolute;
+    top: 1410px;
+    left: 35px;
+
+}
+
+.petitnuage{
+    position: absolute;
+    left: 821px;
+    top: 1460px;
+    filter: blur(15px);
+}
+
+
+
+.grosnuage{
+    position: absolute;
+    right: 62px;
+    top: 1290px;
+    filter: blur(15px);
+}
+
+.nuages img{
+
+    animation: cloudmove linear;
+    animation-timeline: view();
+    transform: translateX(-300px);
+}
+
+@keyframes cloudmove{
+
+    100%{
+        transform: translateX(0px);
+    }
+}

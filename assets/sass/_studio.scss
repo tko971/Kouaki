@@ -5,14 +5,17 @@
     h2 {
       
       &::before {
-        animation: spin 10s infinite linear;
-        
+        animation: spin var(--speed) infinite linear;
+        width: 203px;
+        height: 199px;
         
       }
       
       &::after {
         
-        animation: spin 10s infinite linear;
+        animation: spin var(--speed) infinite linear;
+        width: 109px;
+        height: 109px;
       }
     }
   
