@@ -3,7 +3,8 @@
 
     animation: back 2500ms;
     flex-wrap: wrap;
-    overflow: unset;
+    overflow: visible;
+    
   
     &::before {
         animation: spin var(--speed) infinite linear;
@@ -19,11 +20,6 @@
 
     ul{
     
-
-      li{
-
-          
-      }
       &::after {
         animation: spin var(--speed) infinite linear;
         bottom: -32.5em;
@@ -33,14 +29,14 @@
 }
 
 #oscars {
-display: flex;
-margin-left: 243px;
-font-size: 42px;
-font-family: 'Quicksand' ; 
-color: white;
-position: relative;
-bottom: 162px;
-column-gap: 80px;
+  display: flex;
+  margin-left: 243px;
+  font-size: 42px;
+  font-family: 'Quicksand' ; 
+  color: white;
+  position: relative;
+  bottom: 162px;
+  column-gap: 80px;
 
 }
 .orangeoscar{

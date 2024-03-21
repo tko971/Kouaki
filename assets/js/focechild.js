@@ -28,8 +28,13 @@ titres.forEach(titre =>{
 
 const boutonburger = document.querySelector(".menu-toggle")
 const nav = document.querySelector(".navhover")
-
+const liens = document.querySelectorAll(".liensmenu a")
+console.log(liens)
 boutonburger.addEventListener("click", toggleNav)
+liens.forEach(lien=>{
+	lien.addEventListener("click",toggleNav)
+	
+})
 
 function toggleNav(){
 	boutonburger.classList.toggle("active")
@@ -46,3 +51,4 @@ document.addEventListener("scroll",()=>{
 document.addEventListener("scrollend",()=>{
 	root.style.setProperty("--speed","10s"); 
 })
+

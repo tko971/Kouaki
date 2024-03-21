@@ -1,22 +1,22 @@
 :root{
-    --speed:10s;
+  --speed:10s;
 }
 
 .site{
 
-    overflow: hidden;
+  //overflow: hidden;
 }
 
 p{
 
-animation: p 2500ms;
+  animation: p 2500ms;
 
 }
 
 
 
 .banner{
-   animation: backgroundimg 500ms ;
+  animation: backgroundimg 500ms ;
    
 
 }
@@ -415,6 +415,11 @@ animation: p 2500ms;
 
     position: absolute;
     z-index: 0;
+}
+
+.banner{
+
+    overflow: hidden;
 }
 
 .animation-titre{

@@ -6,12 +6,12 @@ get_header();
     <main id="primary" class="site-main">
         <section class="banner">
                     
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "alt="logo Fleurs d'oranger & chats errants">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "alt="logo Fleurs d'oranger & chats errants" style="position: absolute;" data-bottom-top="transform:translate3d(0, 0px, 0)" data-top-bottom="transform:translate3d(0, -200px, 0)">
                     <video id="background-video" autoplay loop muted>
                       <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/Koukaki.mp4'; ?>" type="video/mp4">
                     </video>
         </section>
-        <section id="#story" class="story">
+        <section id="story" class="story">
             <h2><span>L'histoire</span></h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>

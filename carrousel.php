@@ -17,11 +17,16 @@
       background-size: cover;
       width: 300px;
       height: 300px;
+      display: flex;
+      justify-content: center; 
+      flex-direction: column;
     }
 
     swiper-slide img {
       display: block;
-      width: 100%;
+      height:80%;
+      margin:0 auto;
+      width:auto;
     }
   </style>
 

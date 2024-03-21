@@ -2,10 +2,6 @@
   --speed:10s;
 }
 
-.site {
-  overflow: hidden;
-}
-
 p {
   animation: p 2500ms;
 }
@@ -342,6 +338,10 @@ p {
   z-index: 0;
 }
 
+.banner {
+  overflow: hidden;
+}
+
 .animation-titre {
   animation: animtitre 2000ms forwards;
 }
@@ -354,7 +354,7 @@ h2 span {
 .site-footer {
   animation: back 2500ms;
   flex-wrap: wrap;
-  overflow: unset;
+  overflow: visible;
 }
 .site-footer::before {
   animation: spin var(--speed) infinite linear;
@@ -406,6 +406,7 @@ h2 span {
 .story__article::after {
   animation: spin var(--speed) infinite linear;
 }
+
 #studio {
   animation: fadesections 2500ms;
 }
@@ -419,14 +420,13 @@ h2 span {
   width: 109px;
   height: 109px;
 }
+
 .story #place {
   background: inherit;
 }
 
 .story #place > div {
-  position: absolute;
-  top: 1410px;
-  left: 35px;
+  position: relative;
 }
 
 .petitnuage {
@@ -453,6 +453,28 @@ h2 span {
   100% {
     transform: translateX(0px);
   }
+}
+swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+swiper-slide img {
+  display: block;
+  height: 80%;
+  margin: 0 auto;
+  width: auto;
 }
 
 /*# sourceMappingURL=focechild.css.map */
