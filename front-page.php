@@ -9,7 +9,7 @@ get_header();
             <video id="background-video" autoplay loop muted>
                 <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/Koukaki.mp4'; ?>" type="video/mp4">
             </video>
-            <img data-0="top:150px;" data-300="top:500px;" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "alt="logo Fleurs d'oranger & chats errants" >
+            <img data-0="top:100px;" data-300="top:500px;" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "alt="logo Fleurs d'oranger & chats errants" >
         </section>
         
         <section id="story" class="story">
@@ -18,22 +18,19 @@ get_header();
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
 
-              <?php get_template_part( 'template-parts/carrousel' ); ?>
+            <?php get_template_part( 'template-parts/carrousel' ); ?>
 
             <article id="place">
                 
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
-                    
                     <img data-bottom="left:700px;" data-top="left:400px;" class="petitnuage" src="<?=get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'?>">
                     <img data-bottom="left:900px;" data-top="left:600px;" class="grosnuage" src="<?=get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'?>">
-
                 </div>
 
             </article>
         </section>
-
 
         <section id="studio">
             <h2><span>Studio Koukaki</span></h2>

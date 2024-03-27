@@ -8,8 +8,6 @@ p{
 
 }
 
-
-
 .banner{
   animation: backgroundimg 1000ms ;
   position: relative;
@@ -22,10 +20,7 @@ p{
     opacity: 0;
     animation: bannerimg 1000ms 0.2s ease-out forwards,flottement 3000ms 2.7s infinite ease-in-out;
     position: sticky;
-    width: 40%;
-    
-    
-    
+    width: 50%;
     
 }
 
@@ -82,7 +77,6 @@ p{
 
     animation: fadehover 0.5s forwards ease-in-out;
     display: flex;
-    margin-top: 80px;
     max-width: 1440px;
     width: 100%;
     
@@ -179,7 +173,6 @@ p{
     animation: spin var(--speed) infinite linear;
     margin-left: -63px;
     margin-top: 50px;
-    
 
 }
 

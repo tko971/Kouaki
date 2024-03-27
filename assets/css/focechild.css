@@ -15,7 +15,7 @@ p {
   opacity: 0;
   animation: bannerimg 1000ms 0.2s ease-out forwards, flottement 3000ms 2.7s infinite ease-in-out;
   position: sticky;
-  width: 40%;
+  width: 50%;
 }
 
 .navhover {
@@ -57,7 +57,6 @@ p {
 .navhover.active {
   animation: fadehover 0.5s forwards ease-in-out;
   display: flex;
-  margin-top: 80px;
   max-width: 1440px;
   width: 100%;
 }

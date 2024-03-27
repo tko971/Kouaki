@@ -34,7 +34,6 @@
             </button>
             <ul>
                 <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-                
             </ul>
             
 		</nav><!-- #site-navigation -->
@@ -50,11 +49,10 @@
 
             <img class="loghover" src="<?=get_stylesheet_directory_uri() . '/assets/images/miniLogo.png'?>">
             <ul class="liensmenu">
-                
-                <li><a href="#story">Histoire</a></li>
-                <li><a href="#characters">Personnages</a></li>
-                <li><a href="#place">Lieu</a></li>
-                <li><a href="#studio">Studio Koukaki</a></li>
+              <li><a href="#story">Histoire</a></li>
+              <li><a href="#characters">Personnages</a></li>
+              <li><a href="#place">Lieu</a></li>
+              <li><a href="#studio">Studio Koukaki</a></li>
             </ul>
             <p>STUDIO KOUKAKI</p> 
           </div>
@@ -63,7 +61,6 @@
             <img class="randum" src="<?=get_stylesheet_directory_uri() . '/assets/images/random_flower.png'?>">
             <img class="chatnoir" src="<?=get_stylesheet_directory_uri() . '/assets/images/chatnoir.png'?>">
             <img class="hibiscus" src="<?=get_stylesheet_directory_uri() . '/assets/images/hibiscus_footer.png'?>">
-            
           </section>
         </div>
 	</header><!-- #masthead -->
