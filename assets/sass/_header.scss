@@ -2,11 +2,6 @@
   --speed:10s;
 }
 
-.site{
-
-  //overflow: hidden;
-}
-
 p{
 
   animation: p 2500ms;
@@ -16,7 +11,8 @@ p{
 
 
 .banner{
-  animation: backgroundimg 500ms ;
+  animation: backgroundimg 1000ms ;
+  position: relative;
    
 
 }
@@ -24,8 +20,12 @@ p{
 .banner img {
       
     opacity: 0;
-    animation: bannerimg 2.2s 0.5s ease-out forwards,flottement 3000ms 2.7s infinite ease-in-out;
-    z-index: 1;
+    animation: bannerimg 1000ms 0.2s ease-out forwards,flottement 3000ms 2.7s infinite ease-in-out;
+    position: sticky;
+    width: 40%;
+    
+    
+    
     
 }
 
@@ -34,6 +34,8 @@ p{
 .navhover{
 
     display: none;
+    max-width: 1440px;
+    width: 100%;
     height: 944px;
     position: fixed;
     background-color: #FFF5E9;
@@ -43,6 +45,7 @@ p{
     li{
        list-style-type: none;
        line-height: 84px;
+       margin-bottom: 30px;
      }
 
      a{
@@ -53,8 +56,7 @@ p{
 
     ul{
 
-        top:288px;
-        left: 451px;
+        top:190px;
         position: absolute;
         padding: 0;
         margin: 0;
@@ -64,10 +66,8 @@ p{
      p{
 
         animation: none;
-        top:772px;
-        left: 640px;
         position: absolute;
-        
+        top: 800px;        
      }
 
 }
@@ -80,41 +80,47 @@ p{
 
 .navhover.active{
 
-    animation: fadehover 2s forwards ease-in-out;
+    animation: fadehover 0.5s forwards ease-in-out;
     display: flex;
     margin-top: 80px;
+    max-width: 1440px;
+    width: 100%;
     
 }
 
 .sectiondeux{
 
     text-align: center;
-    width: 539px;
-    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    display: flex;
+    position: relative;
 }
 
 .sectionun{
 
-    width: 451px;
+    width: 30%;
     display: grid;
-    
+    position: relative;
+        
 }
 
 .sectiontrois{
 
-    width: 451px;
+    width: 30%;
     display: grid;
+    position: relative;
+    
 }
 
 .menu-toggle{
 
     z-index: 10;
     position: absolute;
-    top:25px;
-    left: 1300px;
-    right: 300px;
-    height: 30px;
-    width: 30px;
+    right: 100px;
+    height: 100%;
+    width: 15%;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -130,17 +136,23 @@ p{
 
 .main-navigation {
 
-    position: fixed;
-    width: 1440px;
+    position: relative;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
+    
 }
 
 .main-navigation.toggled ul {
     
     display: flex;
 
-}    
+} 
+
+.liensmenu{
+
+    margin-bottom: 20px;
+}
 
 .l1{
     transform: translateY(-10px);
@@ -164,91 +176,78 @@ p{
 
 .orchid{
   
-    top:52px;
-    left:-59px;
-    position: absolute;
     animation: spin var(--speed) infinite linear;
+    margin-left: -63px;
+    margin-top: 50px;
+    
 
 }
 
 .catviolet{
 
-    top:174px;
-    left:267px;
-    position: absolute;
     animation: flottementtwo 2000ms 2.7s infinite ease-in-out;
-    
+    top: 100px;
+    left: 300px;
+    width: 27%;
+    position: absolute;
 }
+
 
 .flower{
 
-    top:463px;
-    left:213px;
-    position: absolute;
-    width: 71px;
-    height: 71px;
     animation: spin var(--speed) infinite linear;
+    width: 16%;
+    margin-left: 137px
 
 }
 
 .catroux{
 
-    top:728px;
-    left:79px;
-    position: absolute;
-    width: 106px;
-    height: 96px;
     animation: flottement 2000ms 2.7s infinite ease-in-out;
+    
 
 }
 
 .sunflower{
 
-    top:69px;
-    left:1039px;
-    position: absolute;
-    width: 216px;
-    height: 216px;
     animation: spin var(--speed) infinite linear;
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 114px;
 
 }
 
 .randum{
 
-    top:375px;
-    left:1396px;
-    position: absolute;
-    width: 76px;
-    height: 74px;
     animation: spin var(--speed) infinite linear;
+    width: 16%;
+    margin-left: 400px;
+    margin-top: 72px;
+    
 }
 
 .chatnoir{
 
-    top:450px;
-    left:1076px;
-    position: absolute;
     animation: flottementtwo 3000ms 2.7s infinite ease-in-out;
+    margin-left: 64px;
+    width: 34%;
     
+        
 }
 
 .hibiscus{
 
-    top:600px;
-    left:1122px;
-    position: absolute;
-    width: 626px;
-    height: 626px;
     animation: spin var(--speed) infinite linear;
-    
+    margin-left: 240px;
+    margin-top: 70px;
+    scale: 1.5;
 }
 
 .loghover{
 
-    top:24px;
-    left: 610px;
-    position: absolute;
     animation: flottement 3000ms 2.7s infinite ease-in-out;
+    margin-bottom: 770px;
+    
 }
 
 //FIN MENU
@@ -335,7 +334,7 @@ p{
 
 @keyframes bannerimg{
     0% {
-        transform: translateY(1000px);
+        transform: translateY(500px);
         opacity: 0;
     }
     50% {
@@ -414,7 +413,6 @@ p{
 #background-video{
 
     position: absolute;
-    z-index: 0;
 }
 
 .banner{
@@ -436,5 +434,101 @@ h2 span{
     
 }
 
+@media screen and (max-width: 700px){
+.main-navigation {
+    height: 80px;
+}
+
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 22px;
+}
+
+.catviolet{
+
+    display: none;
+}
+
+.flower{
+
+    display: none;
+}
+
+#background-video{
+
+    display: none;
+}
+
+.navhover 
+
+a{
+
+    font-size: 10px;
+
+}
+
+li {
+
+    margin-bottom: 0; 
+
+}
+
+.story #place > div {
+
+    margin-right: 37px;
+}
+
+}
+
+@media screen and (max-width: 900px){
+    
+    .navhover{
+        
+        li{
+           
+           line-height: 84px;
+         }
+    
+         a{
+            text-decoration: none;
+            font-size: 44px;
+            
+         }
+    
+    }
+    .oscarstitre p{
+        
+        font-size: 20px;
+    }
+
+    }
+
+@media screen and (max-width: 1260px){
 
 
+.oscarstitre{
+
+    font-size: 30px;
+    max-width: 643px;
+    width: 80%;
+    }
+
+#oscars{
+
+    flex-direction: column-reverse;
+    align-items: center;
+    p{
+        margin-top: 50px;
+    }
+
+    }
+
+.grosnuage{
+
+    display: none;
+}    
+        
+
+}

@@ -12,7 +12,7 @@
 ?>
   
 	<footer id="colophon" class="site-footer">
-   <?php get_template_part( './nomination' ); ?> 
+   <?php get_template_part( 'template-parts/nomination' ); ?> 
         <ul>
             <li><a href="#">Mentions Légales</a></li>
             <li><a href="#">STUDIO KOUKAKI</a></li>
@@ -24,6 +24,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-<script src="<?php echo get_stylesheet_directory_uri().'/assets/js/skrollr.min.js';?>"></script>
+
+<script src=""></script>
+
 </body>
 </html>

@@ -1,36 +1,46 @@
 .story #place{
 
-    background:inherit
+    background-image:url("../images/Studio_Koukaki-image_place.png");
+
 }
 
 .story #place > div {
-    position: relative;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 447px;
+    width: 50%;
+    display: flex;
+    margin-top: 190px;
+    margin-left: 177px;
     
-
+    h3{
+        padding-left: 0;
+    }
+    
+    p{
+        padding-left: 0;
+    }
 }
 
+
 .petitnuage{
-    position: absolute;
-    left: 821px;
-    top: 1460px;
     filter: blur(15px);
+    position: absolute;
+    left: 800px;
+    top: 100px;
 }
 
 
 
 .grosnuage{
-    position: absolute;
-    right: 62px;
-    top: 1290px;
     filter: blur(15px);
+    position: absolute;
+    top: -116px;
+    left: 1000px;
 }
 
-.nuages img{
-
-    animation: cloudmove linear;
-    animation-timeline: view();
-    transform: translateX(-300px);
-}
 
 @keyframes cloudmove{
 

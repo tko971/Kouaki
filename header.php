@@ -56,8 +56,8 @@
                 <li><a href="#place">Lieu</a></li>
                 <li><a href="#studio">Studio Koukaki</a></li>
             </ul>
-           <p> STUDIO KOUKAKI </p>
-</div>
+            <p>STUDIO KOUKAKI</p> 
+          </div>
           <section class="sectiontrois">
             <img class="sunflower" src="<?=get_stylesheet_directory_uri() . '/assets/images/Sunflower.png'?>">
             <img class="randum" src="<?=get_stylesheet_directory_uri() . '/assets/images/random_flower.png'?>">

@@ -4,44 +4,31 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
+
         <section class="banner">
-                    
-                    <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "alt="logo Fleurs d'oranger & chats errants" style="position: absolute;" data-bottom-top="transform:translate3d(0, 0px, 0)" data-top-bottom="transform:translate3d(0, -200px, 0)">
-                    <video id="background-video" autoplay loop muted>
-                      <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/Koukaki.mp4'; ?>" type="video/mp4">
-                    </video>
+            <video id="background-video" autoplay loop muted>
+                <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/Koukaki.mp4'; ?>" type="video/mp4">
+            </video>
+            <img data-0="top:150px;" data-300="top:500px;" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> "alt="logo Fleurs d'oranger & chats errants" >
         </section>
+        
         <section id="story" class="story">
             <h2><span>L'histoire</span></h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
-            <?php
-            $args = array(
-                'post_type' => 'characters',
-                'posts_per_page' => -1,
-                'meta_key'  => '_main_char_field',
-                'orderby'   => 'meta_value_num',
 
-            );
-            $characters_query = new WP_Query($args);
-            ?>
-            <article id="characters">
-                <div class="main-character">
-                    <h3>Les personnages</h3>
-                    <?php get_template_part( './carrousel' ); ?>
-                </div>
-            </article>
+              <?php get_template_part( 'template-parts/carrousel' ); ?>
+
             <article id="place">
-                <img src="<?=get_stylesheet_directory_uri() . '/assets/images/Studio_Koukaki-image_place.png'?>">
-                <section class="nuages">
-                <img class="petitnuage" src="<?=get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'?>">
-                <img class="grosnuage" src="<?=get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'?>">
-                </section>
+                
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                     
+                    <img data-bottom="left:700px;" data-top="left:400px;" class="petitnuage" src="<?=get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'?>">
+                    <img data-bottom="left:900px;" data-top="left:600px;" class="grosnuage" src="<?=get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'?>">
+
                 </div>
 
             </article>
